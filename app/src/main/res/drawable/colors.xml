@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="purple_500">#009688</color>
+    <color name="purple_700">#009688</color>
+    <color name="white">#FFFFFF</color>
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_700">#00796B</color>
+    <color name="purple_200">#009688</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="androidx_core_secondary_text_default_material_light">@color/colorPrimary</color>
+    <color name="lavender">#43C0B6</color>
+    <color name="tab_indicator_color">#673AB7</color>
+    <color name="tab_selected_text_color">#3F51B5</color>
+    <color name="tab_text_color">#2196F3</color>
+    <color name="grey">#9C9999</color>
+    <color name="light_gray">#A7A2A2</color>
+    <color name="gray">#DBD8D8</color>
+</resources>

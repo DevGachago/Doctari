@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomHome"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottomWatchlist"
+        android:icon="@drawable/doctari"
+        android:title="Doctari" />
+    <item
+        android:id="@+id/bottomChats"
+        android:icon="@drawable/chat"
+        android:title="Chats" />
+    <item
+        android:id="@+id/bottomSupport"
+        android:icon="@drawable/support"
+        android:title="Support" />
+
+</menu>

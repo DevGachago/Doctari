@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="specialist_categories">
+        <item>Doctor</item>
+        <item>Pharmacy</item>
+        <item>Consultant</item>
+        <item>Hospital</item>
+        <item>Treatment</item>
+    </string-array>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Central Video View for the Host -->
+    <FrameLayout
+        android:id="@+id/host_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:background="#000000">
+        <!-- Host's video stream will be added here programmatically -->
+    </FrameLayout>
+
+    <!-- Buttons for Host Actions -->
+    <LinearLayout
+        android:id="@+id/host_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_add_participant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Participant"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_remove_participant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Participant"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_mute_participant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mute/Unmute"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_assign_cohost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assign Co-host"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_end_stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Stream"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Sliding View at the Bottom for Participants -->
+    <LinearLayout
+        android:id="@+id/participants_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/host_controls"
+        android:orientation="horizontal"
+        android:background="@android:color/black"
+        android:padding="8dp"
+        android:scrollbars="horizontal">
+        <!-- Individual Participant Views will be added here programmatically -->
+    </LinearLayout>
+
+</RelativeLayout>

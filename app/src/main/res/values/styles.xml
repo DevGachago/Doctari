@@ -1,0 +1,9 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/star</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+    </style>
+</resources>

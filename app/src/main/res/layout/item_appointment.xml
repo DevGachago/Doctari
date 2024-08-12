@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <!-- TextView for Patient Name -->
+    <TextView
+        android:id="@+id/textViewPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="Patient Name" />
+
+    <!-- TextView for Appointment Date -->
+    <TextView
+        android:id="@+id/textViewAppointmentDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:text="Appointment Date" />
+
+    <!-- TextView for Appointment Time -->
+    <TextView
+        android:id="@+id/textViewAppointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:text="Appointment Time" />
+
+    <!-- TextView for Doctor Name -->
+    <TextView
+        android:id="@+id/textViewDoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:text="Doctor Name" />
+
+    <!-- TextView for Purpose -->
+    <TextView
+        android:id="@+id/textViewPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:text="Purpose"
+        android:layout_marginTop="4dp" />
+
+    <!-- TextView for Status -->
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:text="Status"
+        android:layout_marginTop="4dp" />
+
+</LinearLayout>

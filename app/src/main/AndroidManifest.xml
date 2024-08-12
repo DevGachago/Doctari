@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Doctari"
+        tools:targetApi="31">
+        <activity
+            android:name=".live.ChatLive"
+            android:exported="false" />
+        <activity
+            android:name=".live.HostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".live.VideoChatRoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".live.LiveVideoChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.PatientAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.AuthorizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.DocActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.TreatmentsP"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.Preference"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.Treatments"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.MedicalFile"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardUI.MyDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorsAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookAppointment"
+            android:exported="false" />
+        <activity
+            android:name=".MainChats"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeeAll"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientAssesment"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationChoice"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterServices"
+            android:exported="false" />
+        <activity
+            android:name=".PatientRegistrationFom"
+            android:exported="false" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserNameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PhoneNumberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

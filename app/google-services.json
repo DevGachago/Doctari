@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "161885959258",
+    "firebase_url": "https://lenah-d5b5a-default-rtdb.firebaseio.com",
+    "project_id": "lenah-d5b5a",
+    "storage_bucket": "lenah-d5b5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161885959258:android:495eed20164ca7a6d21463",
+        "android_client_info": {
+          "package_name": "com.example.doctari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161885959258-e51e9dn3bou9j9ttq4ee2v6399pc8uns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-xIH8o4OIapds4gVb2xlf8ujozBsaIaI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161885959258-e51e9dn3bou9j9ttq4ee2v6399pc8uns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

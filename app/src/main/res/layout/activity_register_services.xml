@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".RegisterServices">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corner">
+
+        <!-- Specialist Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specialist Name"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/specialist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter specialist's name"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Category -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/specialist_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/specialist_categories"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Specialization -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specialization"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/specialist_specialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter specialization"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/specialist_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter location"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Contact Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Information"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/specialist_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact information"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Additional Details -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Details"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/specialist_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter any additional details"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Certifications"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/specialist_certifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter certifictaion"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blueTheme"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

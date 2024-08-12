@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/label_enter_stream_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Stream ID"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editText_stream_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_enter_stream_id"
+        android:layout_marginTop="16dp"
+        android:hint="Stream ID" />
+
+    <Button
+        android:id="@+id/button_join_stream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_stream_id"
+        android:layout_marginTop="16dp"
+        android:text="Join Stream" />
+</RelativeLayout>

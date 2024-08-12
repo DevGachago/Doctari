@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".BookAppointment">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueTheme"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_your_appointment"
+            android:textColor="#1B5E20"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!-- Form Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_background"
+                android:hint="@string/full_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/appointment_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittext_background"
+                android:clickable="true"
+                android:hint="@string/appointment_date"
+                android:minHeight="48dp"
+                android:focusable="false"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                tools:ignore="Autofill,KeyboardInaccessibleWidget,TextFields"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/appointment_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_background"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/appointment_time"
+                android:inputType="time"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                tools:ignore="KeyboardInaccessibleWidget" />
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:background="@drawable/edittext_background"
+                android:hint="@string/purpose_of_appointment"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/book_appointment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/blueTheme"
+                android:padding="12dp"
+                android:text="@string/book_appointment"
+                android:textColor="#263238"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

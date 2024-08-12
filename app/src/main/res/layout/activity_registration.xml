@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Personal Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="@color/blueTheme"
+            android:textSize="16sp" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textColor="@color/blueTheme" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textColor="@color/blueTheme" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                android:textColor="@color/blueTheme" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/emergency_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Emergency Contact"
+            android:inputType="phone"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Address Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address Information"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/home_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Home Address"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/state_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State/Province"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postal/Zip Code"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Identification -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identification"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/national_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="National ID Number"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/insurance_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insurance Provider"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/policy_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Policy Number"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Medical History -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical History"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/current_medications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Medications"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/allergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/past_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Past Medical Conditions"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/family_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Family Medical History"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/surgeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Surgeries and Hospitalizations"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/immunization_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Immunization Records"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Lifestyle Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lifestyle Information"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/smoking_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Smoking Status"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/alcohol_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alcohol Consumption"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/exercise_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exercise Frequency"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <EditText
+            android:id="@+id/dietary_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dietary Preferences"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Preferences and Accessibility -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferences and Accessibility"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/preferred_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preferred Language"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/communication_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preferred Communication Method"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/accessibility_needs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Accessibility Needs"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"/>
+
+        <!-- Consent and Legal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consent and Legal"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/consent_telehealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consent for Telehealth Services" />
+
+        <CheckBox
+            android:id="@+id/consent_data_sharing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consent for Data Sharing" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
